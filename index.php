@@ -107,7 +107,7 @@ include('a_config.php');
 							<h2> Welcome to Online Ebook Maker  </h2>
 								</div>
 							</div>
-							<div class="carousel-item" style="background-image: url('image/banner1.jpg'); background-color: #ffffff47;     background-blend-mode: overlay;">
+							<div class="carousel-item" style="background-image: url('image/3.jpg'); background-color: #ffffff47;     background-blend-mode: overlay;">
 								<div class="d-flex h-100 align-items-center justify-content-center">
 							
 							<h2> Make ebooks here for free of charge</h2>							

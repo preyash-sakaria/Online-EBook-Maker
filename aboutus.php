@@ -17,19 +17,19 @@ include('a_config.php');
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css"/>
 
 		<style type="text/css">
-			body 
-				{
+			.back{
 				  background-position: center;
 				  background-attachment: fixed;
 				  background-repeat: no-repeat;
 				  background-image: url("image/banner.jpg");
-				  background-blend-mode: normal;
+				  background-blend-mode: overlay;
+				  background-color: #ffffff47;
 				}
 		</style>
 
 	</head>
 	<body>
-
+<div class="back">
 		<div class="content">
 			<?php include 'loginheader.php';
 			?>
@@ -45,5 +45,6 @@ include('a_config.php');
 		<?php
 		include('footer.php');
 		?>
+</div>
 	</body>
 </html>

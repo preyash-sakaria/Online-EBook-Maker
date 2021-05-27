@@ -17,13 +17,13 @@ include('a_config.php');
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css" />
 
 		<style type="text/css">
-			body 
-				{
+			.back{
 				  background-position: center;
 				  background-attachment: fixed;
 				  background-repeat: no-repeat;
 				  background-image: url("image/banner.jpg");
-				  background-blend-mode: normal;
+				  background-blend-mode: overlay;
+				  background-color: #ffffff47;
 				}
 		</style>
 	</head>
@@ -31,6 +31,7 @@ include('a_config.php');
 
 
 	<body>
+		<div class="back">
 		<div class="content">
 
 			<?php include 'loginheader.php';
@@ -81,14 +82,14 @@ include('a_config.php');
 			$email = mysqli_real_escape_string($con, $_POST["email"]);
 			$phone = mysqli_real_escape_string($con, $_POST["phone"]);
 			$message = mysqli_real_escape_string($con, $_POST["message"]);
-			$query = "insert into contact (name, contact, email, message) values ('".$name."', '".$email."', '".$phone."', '".$message."')";
+			$query = "insert into contact (name, email, contact, message) values ('".$name."', '".$email."', '".$phone."', '".$message."')";
 			$result = mysqli_query($con, $query);
 			if($result)
 			{
-				echo "<script>alert('Successfully send message!');window.location.href='contactus.php';</script>";
+				echo "<script>alert('Successfully message sent!');window.location.href='contactus.php';</script>";
 			}
 		}
 		?>
-		
+		</div>
 	</body>
 </html>
