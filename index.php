@@ -17,7 +17,7 @@ include('a_config.php');
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css" />
 	
 	</head>
-	<body>
+	<body style="background-image: url(image/1.jpg);">
 
 		<div class="content">
 			<?php
@@ -101,7 +101,7 @@ include('a_config.php');
 							
 						</ol>
 						<div class="carousel-inner text-center" role="listbox" >
-							<div class="carousel-item active" style="background-image: url('image/banner2.jpg') ; background-color: #ffffff47;     background-blend-mode: overlay;">
+							<div class="carousel-item active" style="background-image: url('image/back.jpg') ; background-color: #ffffff47;     background-blend-mode: overlay;">
 								<div class="d-flex h-100 align-items-center justify-content-center">
 							
 							<h2> Welcome to Online Ebook Maker  </h2>

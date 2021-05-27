@@ -17,13 +17,28 @@ $id = "";
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Author Sign up</title>
+	<title><?php echo $PAGE_TITLE; ?></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style type="text/css">
+			.back{
+				background-image: url(image/2.jpg);
+				background-blend-mode: screen;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+
+		</style>
+
 </head>
 
 <body>
 
+
+<div class="back">
 <div class="container my-5">
-<form method="post" id="product_form" >
+<form method="post" id="product_form" style="margin-top: 10%;">
 	<h1 class="text-center" style="color: navy">Author Personal Details</h1>
 	<br />
 	<div class="row">
@@ -94,7 +109,7 @@ $id = "";
 
 </form>
 </div>
-
+</div>
 
 <?php
 
@@ -177,9 +192,6 @@ if (input.attr("type") === "password") {
 	input.attr("type", "password");
 }
 
-
-
-
 });
 
 $(document).on('click', '.toggle-password1', function () {
@@ -204,6 +216,3 @@ if (input1.attr("type") === "password") {
 </script>
 </body>
 </html>
-<?php
-
-?>
