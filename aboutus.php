@@ -37,7 +37,7 @@ include('a_config.php');
 			<div style="margin-top: 9%;">
 			<h1 class="text-center my-5" style="color: black;"> About Us</h1>
 
-			
+
 
 			</div>
 
