@@ -84,10 +84,19 @@ include('a_config.php');
 			$message = mysqli_real_escape_string($con, $_POST["message"]);
 			$query = "insert into contactus (name, email,phone, message) values ('".$name."', '".$email."', '".$phone."', '".$message."')";
 			$result = mysqli_query($con, $query);
-			if($result)
-			{
-				echo "<script>alert('Successfully message sent!');window.location.href='index.php';</script>";
-			}
+
+			
+			if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+				echo "<script>alert('Please Enter Valid Email ID!');</script>";
+				echo "<script> window.history.go(-1); </script>";		
+		    }
+			else{
+
+				if ($result) {
+						
+					echo "<script>alert('Successfully message sent!');window.location.href='contactus.php';</script>";
+					}
+				}
 		}
 		?>
 		</div>

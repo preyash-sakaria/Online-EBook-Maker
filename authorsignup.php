@@ -127,8 +127,7 @@ if(isset($_POST["submit"]))
 
 	if(!filter_var($email_id,FILTER_VALIDATE_EMAIL)) {
 		echo "<script>alert('Please Enter Valid Email ID!');</script>";
-		echo "<script> window.history.go(-1); </script>";
-		
+		echo "<script> window.history.go(-1); </script>";		
         
     }
 	elseif($pass!=$cpass){
@@ -142,21 +141,17 @@ if(isset($_POST["submit"]))
 	{
 		echo "<script>alert('Already registered with this email ID');</script>";
 		echo "<script> window.history.go(-1); </script>";
-
-
 	}
 	else
 	{
 		
-		$query2 = "INSERT INTO `author`(`Aid`, `Afname`, `Alname`, `Aemail`, `Amobile`, `address`, `password`,`status`) VALUES ('".$aid."', '".$first_name."', '".$last_name."', '".$email_id."', '".$mobile."', '".$address."', '".$pass."', 'pending')";
+	 $query2 = "INSERT INTO `author`(`Aid`, `Afname`, `Alname`, `Aemail`, `Amobile`, `address`, `password`,`status`) VALUES ('".$aid."', '".$first_name."', '".$last_name."', '".$email_id."', '".$mobile."', '".$address."', '".$pass."', 'pending')";
 	
 		if(mysqli_query($con, $query2))
 		{
 			echo "<script>alert('Successfully Registered..Kindly Login Now');window.location.href='index.php?type=login';</script>";
 		}
-		else{
-			echo "oho";
-		}
+		
 	}
 }
 }
