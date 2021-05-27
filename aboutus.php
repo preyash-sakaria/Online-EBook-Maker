@@ -40,11 +40,12 @@ include('a_config.php');
 			
 
 			</div>
-			<p> Online Ebook website is established from 1990 and still doing great work with new authors and admin.</p>
-			<p> Online Ebook website is established from 1990 and still doing great work with new authors and admin.</p>
-			<p> Online Ebook website is established from 1990 and still doing great work with new authors and admin.</p>
-			<p> Online Ebook website is established from 1990 and still doing great work with new authors and admin.</p>
-			<p> Online Ebook website is established from 1990 and still doing great work with new authors and admin.</p>
+			<p> We Believe In</p>
+			<p> Action. Community. Quality.</p>
+			<p> At Fiverr, it’s our mission to grow and cultivate the world’s largest digital marketplace, a place where people can find and purchase any service they need, and build any business they dream. As an employee, your work is inspired by the success of our users and the celebration of your own personal growth. Join us.</p>
+
+
+			
 
 
 
