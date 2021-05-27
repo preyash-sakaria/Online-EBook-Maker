@@ -45,7 +45,7 @@ include('a_config.php');
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6 shadow-lg p-3 mb-5 bg-white rounded">
-					<form method="post">
+					<form   method="post">
 						<div class="form-group">
 							<label for="name">Name:</label>
 							<input type="text" class="form-control" id="name"  name="name" required />
@@ -62,7 +62,7 @@ include('a_config.php');
 							<label for="message">Message:</label>
 							<textarea class="form-control" id="message" name="message" required ></textarea>
 						</div>
-						<input type="submit" name="submit" class="btn btn-primary" />
+						<input type="submit" name="submit" class="btn btn-primary" oninput="validation()" />
 					</form>
 				</div>
 				<div class="col-md-3">
@@ -78,6 +78,7 @@ include('a_config.php');
 		<?php
 		if(isset($_POST["submit"]))
 		{
+<<<<<<< Updated upstream
 			$name = mysqli_real_escape_string($con, $_POST["c_name"]);
 			$email = mysqli_real_escape_string($con, $_POST["c_email"]);
 			$phone = mysqli_real_escape_string($con, $_POST["c_phone"]);
@@ -86,6 +87,13 @@ include('a_config.php');
 
 			$query = "INSERT INTO `contact`(`c_name`, `c_name`, `c_phone`, `c_msg`) VALUES ('".$name."', '".$email."', '".$phone."', '".$message."')";
 
+=======
+			$name = mysqli_real_escape_string($con, $_POST["name"]);
+			$email = mysqli_real_escape_string($con, $_POST["email"]);
+			$phone = mysqli_real_escape_string($con, $_POST["phone"]);
+			$message = mysqli_real_escape_string($con, $_POST["message"]);
+			$query = "insert into contactus (name, email,phone, message) values ('".$name."', '".$email."', '".$phone."', '".$message."')";
+>>>>>>> Stashed changes
 			$result = mysqli_query($con, $query);
 			
 			if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
