@@ -123,24 +123,27 @@ if(isset($_POST["submit"]))
 	$address = $_POST["address"];
 	$pass = $_POST["pass"];
 	$cpass = $_POST["cpass"];
-	$error =false;
+	$error = false;
+
 	if(!filter_var($email_id,FILTER_VALIDATE_EMAIL)) {
-        $error = true;
-        $email_error = "Please Enter Valid Email ID!";
-         echo $email_error;
+		echo "<script>alert('Please Enter Valid Email ID!');</script>";
+		echo "<script> window.history.go(-1); </script>";
+		
         
     }
-	if($pass!=$pass){
+	elseif($pass!=$cpass){
 		echo "<script>alert('Password And Confirm Password Not Matched!');</script>";
+		echo "<script> window.history.go(-1); </script>";
 	}
 	else{
-		
-
 	$query2 = "select * from author where Aemail = '".$email_id."'";
 	$result = mysqli_query($con, $query2);
 	if($row = mysqli_fetch_array($result))
 	{
 		echo "<script>alert('Already registered with this email ID');</script>";
+		echo "<script> window.history.go(-1); </script>";
+
+
 	}
 	else
 	{
@@ -150,6 +153,9 @@ if(isset($_POST["submit"]))
 		if(mysqli_query($con, $query2))
 		{
 			echo "<script>alert('Successfully Registered..Kindly Login Now');window.location.href='index.php?type=login';</script>";
+		}
+		else{
+			echo "oho";
 		}
 	}
 }
@@ -176,6 +182,17 @@ include('footer.php');
     right: 15px;
 }
 </style>
+
+<?php
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
 <script>
 $(document).on('click', '.toggle-password', function () {
 

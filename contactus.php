@@ -78,16 +78,29 @@ include('a_config.php');
 		<?php
 		if(isset($_POST["submit"]))
 		{
-			$name = mysqli_real_escape_string($con, $_POST["name"]);
-			$email = mysqli_real_escape_string($con, $_POST["email"]);
-			$phone = mysqli_real_escape_string($con, $_POST["phone"]);
-			$message = mysqli_real_escape_string($con, $_POST["message"]);
-			$query = "insert into contact (name, email, contact, message) values ('".$name."', '".$email."', '".$phone."', '".$message."')";
+			$name = mysqli_real_escape_string($con, $_POST["c_name"]);
+			$email = mysqli_real_escape_string($con, $_POST["c_email"]);
+			$phone = mysqli_real_escape_string($con, $_POST["c_phone"]);
+			$message = mysqli_real_escape_string($con, $_POST["c_msg"]);
+			$error =false;
+
+			$query = "INSERT INTO `contact`(`c_name`, `c_name`, `c_phone`, `c_msg`) VALUES ('".$name."', '".$email."', '".$phone."', '".$message."')";
+
 			$result = mysqli_query($con, $query);
-			if($result)
-			{
-				echo "<script>alert('Successfully message sent!');window.location.href='contactus.php';</script>";
-			}
+			
+			if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+		        $error = true;
+		         echo "Please Enter Valid Email ID!";
+				echo "<script> window.history.go(-1); </script>";
+
+		        }
+			else{
+
+				if ($result) {
+						
+					echo "<script>alert('Successfully message sent!');window.location.href='contactus.php';</script>";
+					}
+				}
 		}
 		?>
 		</div>
