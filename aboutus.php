@@ -40,6 +40,7 @@ include('a_config.php');
 			
 
 			</div>
+			<p> Online Ebook website is established from 1990 and still doing great work with new authors and admin.</p>
 
 
 
