@@ -30,7 +30,7 @@ include('../a_config.php');
 	<body>
 	<div class="content">
 		<div class="home_banner1 text-center" >
-				<nav class="navbar navbar-expand-md fixed-top navbar-light">
+				<nav class="navbar navbar-expand-md fixed-top navbar-light-green">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 					<i class="fa fa-navicon" style="color: white; "></i>
 				</button>

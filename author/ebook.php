@@ -3,11 +3,26 @@ session_start();
 include('../connection.php');
 if(isset($_SESSION["user_type"]))
 {
-   include('header.php');
-	$id = "";
 
 ?>
-<div class="container my-5">
+<style type="text/css">
+			.back{
+				  background-position: center;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  background-image: url("../image/banner.jpg");
+				  background-blend-mode: overlay;
+				  background-color: #ffffff47;
+				}
+		</style>
+
+<div class="back">
+	<?php include 'header.php';
+	?>
+
+	<div style="margin-top: 9%;">
+
+ <div class="container my-5" style="background-color: #668cff">
 
 	<h1 class="text-center" style="color: navy">Manage Ebook</h1>
 	<br />

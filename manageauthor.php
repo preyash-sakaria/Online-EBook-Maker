@@ -3,10 +3,33 @@ session_start();
 include('connection.php');
 if(isset($_SESSION["type"]))
 {
-   include('header.php');
-
+   
 ?>
-<div class="container my-5">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Manage Author </title>
+
+	<style type="text/css">
+			.back{
+				  background-position: center;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  background-image: url("image/banner.jpg");
+				  background-blend-mode: overlay;
+				  background-color: #ffffff47;
+				}
+		</style>
+
+</head>
+<body>
+<div class="back">
+
+	<?php include('header.php');?>
+
+<div style="margin-top: 9%;">
+<div class="container my-5" style="background-color: #668cff">
 	<h1 class="text-center" style="color: navy">Manage Author Details</h1>
 	<br />
 	<div align="right">
@@ -90,6 +113,7 @@ if(isset($_SESSION["type"]))
 			</div>
 		</form>
 	</div>
+</div>
 </div>
 </div>
 <?php

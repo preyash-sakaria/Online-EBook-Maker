@@ -43,7 +43,7 @@ include('a_config.php');
 		<div style="margin-top:2%;">
 			<h3 class="text-center my-5" style="color: brown;">  Community. Quality. Action.</h3></div>
 			<div style="margin-top:2%;">
-			<h3 class="text-center my-5" style="color: brown;"> Online Ebook Maker website is free for all Authors who wants to write their thoughts, they can easily represent their book to the world through our website. our mission is to grow and create world's largest digital Ebook Maker platform, a place where people can read and write, and built any book they dream. As founder and CEO of this, our work is inspired more users and celebrate our own personal growth.</h3>
+			<h3 class="text-center my-5" style="background-color: white; "> Online Ebook Maker website is free for all Authors who wants to write their thoughts, they can easily represent their book to the world through our website. our mission is to grow and create world's largest digital Ebook Maker platform, a place where people can read and write, and built any book they dream. As founder and CEO of this, our work is inspired more users and celebrate our own personal growth.</h3>
 		</div>
 
 

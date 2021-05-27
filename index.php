@@ -17,7 +17,7 @@ include('a_config.php');
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css" />
 	
 	</head>
-	<body style="background-image: url(image/1.jpg); background-color: #ffffff47; background-attachment: fixed; background-size: cover;      background-blend-mode: overlay;">
+	<body style="background-image: url(image/1.jpg); background-color: #ffffff47; background-attachment: fixed;       background-blend-mode: overlay;">
 
 		<div class="content">
 			<?php
