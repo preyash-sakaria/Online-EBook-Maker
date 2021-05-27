@@ -86,7 +86,7 @@ include('a_config.php');
 			$result = mysqli_query($con, $query);
 			if($result)
 			{
-				echo "<script>alert('Successfully message sent!');window.location.href='contactus.php';</script>";
+				echo "<script>alert('Successfully message sent!');window.location.href='index.php';</script>";
 			}
 		}
 		?>
