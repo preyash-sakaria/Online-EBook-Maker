@@ -34,6 +34,36 @@
 	}
 	?>
 	</script>
+  <style>
+    .fa {
+  padding: 20px;
+text-align: center;
+  margin: 5px 2px;
+  font-size: 30px;
+  width: 50px;
+}
+    .fa-facebook {
+  background: #3B5998;
+  color: white;
+
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+  </style>
 </head>
 <body>
 
@@ -44,6 +74,14 @@
 			<div class="col-md-8 text-left">
 				<p><a href="aboutus.php" class="text-white">About Us</a> || <a href="contactus.php" class="text-white">Contact Us</a></p>
 				<p>COPYRIGHT @ Online E-Book Maker</p>
+        <p> 
+          <a href="https://www.facebook.com/marketplace" class="fa fa-facebook"> </a> 
+
+          <a href="www.twitter.com" class="fa fa-twitter"> </a>
+
+          <a href="#" class="fa fa-pinterest"> </a>
+
+          <a href="#" class="fa fa-linkedin"> </a></p>
 			</div>
 		</div>
 	</div>
