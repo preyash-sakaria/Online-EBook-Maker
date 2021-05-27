@@ -44,9 +44,9 @@ include('a_config.php');
 			<h2 class="text-center my-5" style="color: black;"> We Believe In</h2>
 		</div>
 		<div style="margin-top:2%;">
-			<h3 class="text-center my-5" style="color: silver;"> Action. Community. Quality.</h3></div>
+			<h3 class="text-center my-5" style="color: brown;"> Action. Community. Quality.</h3></div>
 			<div style="margin-top:2%;">
-			<h3 class="text-center my-5" style="color: black;"> At Fiverr, it’s our mission to grow and cultivate the world’s largest digital marketplace, a place where people can find and purchase any service they need, and build any business they dream. As an employee, your work is inspired by the success of our users and the celebration of your own personal growth. Join us.</h3>
+			<h3 class="text-center my-5" style="color: brown;"> Online Ebook Maker website is free for all Authors who wants to write their thoughts, they can easily represent their book to the world through our website. our mission is to grow and create world's largest digital Ebook Maker platform, a place where people can read and write, and built any book they dream. As founder and CEO of this, our work is inspired more users and celebrate our own personal growth.</h3>
 		</div>
 
 
