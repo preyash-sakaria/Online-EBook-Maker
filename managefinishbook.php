@@ -27,7 +27,7 @@ if(isset($_SESSION["type"]))
 <?php    include('header.php'); ?>
 
 <div style="margin-top: 9%;">
-<div class="container my-5" style="background-color: #668cff">
+<div class="container my-5" style="background-color: lightblue">
 	<h1 class="text-center" style="color: navy">Manage Finish Ebook Details</h1>
 	<br />
 	<div align="right">
