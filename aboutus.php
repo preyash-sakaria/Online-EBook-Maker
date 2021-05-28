@@ -40,9 +40,10 @@ include('a_config.php');
 			
 			<h2 class="text-center my-5" style="color: black;"> We Believe In</h2>
 
-			<h3 class="text-center my-5" style="color: brown;">  Community. Quality. Action.</h3>
+			<pre><h3 class="text-center my-5" style="color: brown;">  Community || Quality || Action</h3></pre>
+			<h3 class="text-center my-5" > Online Ebook Maker website is free of charge for all Authors who wants to write their thoughts, they can easily represent their book to the world through our website. Our mission is to grow and create world's largest digital Ebook Maker platform, a place where people can read and write, and built any book they wish for. <br><br>
 
-			<h3 class="text-center my-5" > Online Ebook Maker website is free of charge for all Authors who wants to write their thoughts, they can easily represent their book to the world through our website. our mission is to grow and create world's largest digital Ebook Maker platform, a place where people can read and write, and built any book they dream. As founder and CEO of this, our work is inspired more users and celebrate our own personal growth.</h3>
+			Our team is made up of smart and talented people that are passionate about developing this website more and more user friendly and useful. </h3>
 		</div>
 	
 		</div> </div>
