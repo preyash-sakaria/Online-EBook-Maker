@@ -59,36 +59,6 @@ include('a_config.php');
 				</nav>
 
 	
-<!--				<nav class="navbar navbar-expand-md fixed-top navbar-light">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-						<i class="fa fa-navicon" style="color: white; "></i>
-					</button>
-					<div class="collapse navbar-collapse" id="collapsibleNavbar">
-						<?php
-						if(isset($_GET["type"]))
-						{
-						?>
-				<img src="image/logo.png" alt="Northern Lights" width="100" height="100" style="margin-left: 9px;">	<h2 class="navbar-brand" style="font-size: 31px;">Online E-Book Maker </h2>
-						<?php
-						}
-						?>
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" id="userhome" href="index.php" id="home"><i class="fa fa-home"></i> Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="aboutus.php"><i class="fa fa-users"></i> About Us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contactus.php"><i class="fa fa-phone"></i> Contact Us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="user" href="index.php?type=login"><i class="fa fa-lock"></i> Login</a>
-							</li>
-						</ul>
-					</div> 
-				</nav>
--->
 				<?php
 				if(!isset($_GET["type"]))
 				{

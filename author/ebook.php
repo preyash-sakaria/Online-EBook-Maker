@@ -141,29 +141,7 @@ $(document).ready(function(){
 		var cid = $(this).data("row-id");
 		var edit = 0;
 		window.location.href="addebook.php?eid="+cid;
-		// $.ajax({
-		// 	url:"ebookresponse.php",
-		// 	method:"POST",
-		// 	data:{cid:cid, edit:edit},
-		// 	dataType:"json",
-		// 	success:function(data)
-		// 	{
-
-		// 	$('#action').css("display", "initial");
-        //    $('#product_modal').modal('show');
-		// 	$('#edit_id').val(data.aid);
-		// 	$('#fname').val(data.fname);
-		// 	$('#lname').val(data.lname);
-		// 	$('#email').val(data.email);
-		// 	$('#mobile').val(data.mobile);
-		// 	$('#address').val(data.address);
-
-		// 	$('.modal-title').text("Edit Agent Details");
-		// 	 $('#action').val("Edit");
-		//  $('#operation').val("Edit");
-
-		// 	}
-		// });
+		
 		});
 	});
 
@@ -178,7 +156,7 @@ $(document).ready(function(){
 			url:"ebookresponse.php",
 			method:"POST",
 			data:{cid:cid, finish:finish},
-	     	//	dataType:"json",
+	     
 			success:function(data)
 			{
            alert(data);
@@ -233,7 +211,6 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('#add_button').click(function(){
 		$('#product_form')[0].reset();
-		// $('#car_image').css("display", "initial");
 		$('.modal-title').text("Add Task Details");
 		$('#action').val("Add");
 		$('#operation').val("Add");
