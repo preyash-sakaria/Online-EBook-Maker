@@ -17,13 +17,28 @@ $id = "";
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Author Sign up</title>
+	<title><?php echo $PAGE_TITLE; ?></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style type="text/css">
+			.back{
+				background-image: url(image/3.jpg);
+				background-blend-mode: screen;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+			}
+
+		</style>
+
 </head>
 
 <body>
 
-<div class="container my-5">
-<form method="post" id="product_form" >
+
+<div class="back">
+<div class="container my-5" style=" ">
+<form method="post" id="product_form" style="margin-top: 10%; background-color: lightgrey; width: 55%; margin-left: 20%;">
 	<h1 class="text-center" style="color: navy">Author Personal Details</h1>
 	<br />
 	<div class="row">
@@ -94,7 +109,7 @@ $id = "";
 
 </form>
 </div>
-
+</div>
 
 <?php
 
@@ -108,34 +123,35 @@ if(isset($_POST["submit"]))
 	$address = $_POST["address"];
 	$pass = $_POST["pass"];
 	$cpass = $_POST["cpass"];
-	$error =false;
+	$error = false;
+
 	if(!filter_var($email_id,FILTER_VALIDATE_EMAIL)) {
-        $error = true;
-        $email_error = "Please Enter Valid Email ID!";
-         echo $email_error;
+		echo "<script>alert('Please Enter Valid Email ID!');</script>";
+		echo "<script> window.history.go(-1); </script>";		
         
     }
-	if($pass!=$pass){
+	elseif($pass!=$cpass){
 		echo "<script>alert('Password And Confirm Password Not Matched!');</script>";
+		echo "<script> window.history.go(-1); </script>";
 	}
 	else{
-		
-
 	$query2 = "select * from author where Aemail = '".$email_id."'";
 	$result = mysqli_query($con, $query2);
 	if($row = mysqli_fetch_array($result))
 	{
 		echo "<script>alert('Already registered with this email ID');</script>";
+		echo "<script> window.history.go(-1); </script>";
 	}
 	else
 	{
 		
-		$query2 = "INSERT INTO `author`(`Aid`, `Afname`, `Alname`, `Aemail`, `Amobile`, `address`, `password`,`status`) VALUES ('".$aid."', '".$first_name."', '".$last_name."', '".$email_id."', '".$mobile."', '".$address."', '".$pass."', 'pending')";
+	 $query2 = "INSERT INTO `author`(`Aid`, `Afname`, `Alname`, `Aemail`, `Amobile`, `address`, `password`,`status`) VALUES ('".$aid."', '".$first_name."', '".$last_name."', '".$email_id."', '".$mobile."', '".$address."', '".$pass."', 'pending')";
 	
 		if(mysqli_query($con, $query2))
 		{
 			echo "<script>alert('Successfully Registered..Kindly Login Now');window.location.href='index.php?type=login';</script>";
 		}
+		
 	}
 }
 }
@@ -161,6 +177,17 @@ include('footer.php');
     right: 15px;
 }
 </style>
+
+<?php
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
 <script>
 $(document).on('click', '.toggle-password', function () {
 
@@ -176,9 +203,6 @@ if (input.attr("type") === "password") {
 
 	input.attr("type", "password");
 }
-
-
-
 
 });
 
@@ -204,6 +228,3 @@ if (input1.attr("type") === "password") {
 </script>
 </body>
 </html>
-<?php
-
-?>

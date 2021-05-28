@@ -3,10 +3,34 @@ session_start();
 include('connection.php');
 if(isset($_SESSION["type"]))
 {
-   include('header.php');
-
+   
 ?>
-<div class="container my-5">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Manage Author </title>
+
+	<style type="text/css"> 
+			.back{
+				  background-position: center;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  background-image: url("image/banner.jpg");
+				  background-blend-mode: overlay;
+				  background-color: #ffffff47;
+				}
+		</style>
+
+</head>
+<body>
+<div class="back">
+
+	<?php include('header.php');?>
+
+<div style="margin-top: 9%;">
+<div class="container my-5" style="background-color:lightblue; box-sizing: 1px">
 	<h1 class="text-center" style="color: navy">Manage Author Details</h1>
 	<br />
 	<div align="right">
@@ -30,24 +54,6 @@ if(isset($_SESSION["type"]))
 	</div>
 </div>
 
-
-
-<!-- Description Modal -->
-<div id="desc" class="modal fade">
-	<div class="modal-dialog modal-md">
-		<div class="modal-content shadow-lg p-3 mb-5 bg-white rounded text-left">
-			<div class="modal-header">
-				<h4 class="modal-title title" id="car_name"></h4>
-			</div>
-			<div class="modal-body">
-				<h4 class="modal_head"><u>Description:</u></h4> <label name="sdescription" id="sdescription" class="inner_data"></label>
-			</div>
-			<div class="modal-footer">
-				<button type="button" data-dismiss="modal" class="btn bg-danger class text-white">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
 
 <!-- The Delete Confirmation Modal -->
 <div id="delete" class="modal fade">
@@ -92,6 +98,7 @@ if(isset($_SESSION["type"]))
 	</div>
 </div>
 </div>
+</div>
 <?php
 include('footer.php');
 ?>
@@ -116,74 +123,6 @@ $(document).ready(function(){
 		}
 	});
 
-	// $(document).on('submit', '#product_form', function(event){
-	// 	event.preventDefault();
-	// 	var operation = $('#operation').val();
-	// 	if(operation == "Add")
-	// 	{				
-	// 		$.ajax({
-	// 		url:"authorResponse.php",
-	// 		method:"POST",
-	// 		data:new FormData(this),
-	// 		contentType: false,
-	// 		cache: false,
-	// 		processData:false,
-	// 		success:function(data)
-	// 		{
-	// 		alert(data);
-	// 		window.location.href="manageauthor.php";
-	// 		}
-	// 		});
-	// 	}
-	// 	else{
-
-	// 		$.ajax({
-	// 		url:"authorResponse.php",
-	// 		method:"POST",
-	// 		data:new FormData(this),
-	// 		contentType: false,
-	// 		cache: false,
-	// 		processData:false,
-	// 		success:function(data)
-	// 		{
-	// 		alert(data);
-	// 		window.location.href="manageauthor.php";
-	// 		}
-	// 		});
-	// 	}
-	// });
-	// $(document).on("loaded.rs.jquery.bootgrid", function()
-	// {
-	// 	productTable.find(".update").on("click", function(event)
-	// 	{
-	// 	var cid = $(this).data("row-id");
-	// 	var edit = 0;
-	// 	$.ajax({
-	// 		url:"authorResponse.php",
-	// 		method:"POST",
-	// 		data:{cid:cid, edit:edit},
-	// 		dataType:"json",
-	// 		success:function(data)
-	// 		{
-	// 		$('#action').css("display", "initial");
-		
-			
-	// 		$('#product_modal').modal('show');
-	// 		$('#edit_id').val(data.aid);
-	// 		$('#fname').val(data.fname);
-	// 		$('#lname').val(data.lname);
-	// 		$('#email').val(data.email);
-	// 		$('#mobile').val(data.mobile);
-	// 		$('#address').val(data.address);
-			
-			
-	// 		 $('#action').val("Edit");
-	// 	 $('#operation').val("Edit");
-		
-	// 		}
-	// 	});
-	// 	});
-	// });
 
 	$(document).on("loaded.rs.jquery.bootgrid", function()
 	{
@@ -261,39 +200,8 @@ $(document).ready(function(){
 			}
 			});
 	});
-	//
+
 });
-
-// $(document).ready(function(){
-// 	$('#add_button').click(function(){
-// 		$('#product_form')[0].reset();
-		
-// 		$('.modal-title').text("Add Auditor Details");
-// 		$('#action').val("Add");
-// 		$('#operation').val("Add");
-		
-// 			$('#edit_model').css("display","initial");
-// 			$('#action').css("display", "initial");
-// 	});
-	
-// 	$('#edit_category').on('change', function() {
-	
-// 	var brand = 1;
-// 	var brand_name = this.value;
-// 	$.ajax({
-// 			url:"authorResponse.php",
-// 			method:"POST",
-// 			data:{brand_name:brand_name, brand:brand},
-// 			success:function(data)
-// 			{
-// 			$('#edit_model').html("");
-// 				$('#edit_model').append(data);
-// 				$('#action').css("display", "initial");
-// 			}
-// 			});
-// 	});
-
-// });
 
 
 			

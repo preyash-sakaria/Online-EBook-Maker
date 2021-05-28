@@ -17,13 +17,14 @@ include('a_config.php');
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css" />
 
 		<style type="text/css">
-			body 
-				{
+			.back{
 				  background-position: center;
 				  background-attachment: fixed;
 				  background-repeat: no-repeat;
+				  background-size: cover;
 				  background-image: url("image/banner.jpg");
-				  background-blend-mode: normal;
+				  background-blend-mode: overlay;
+				  background-color: #ffffff47;
 				}
 		</style>
 	</head>
@@ -31,6 +32,7 @@ include('a_config.php');
 
 
 	<body>
+		<div class="back">
 		<div class="content">
 
 			<?php include 'loginheader.php';
@@ -44,7 +46,7 @@ include('a_config.php');
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6 shadow-lg p-3 mb-5 bg-white rounded">
-					<form method="post">
+					<form   method="post">
 						<div class="form-group">
 							<label for="name">Name:</label>
 							<input type="text" class="form-control" id="name"  name="name" required />
@@ -61,7 +63,7 @@ include('a_config.php');
 							<label for="message">Message:</label>
 							<textarea class="form-control" id="message" name="message" required ></textarea>
 						</div>
-						<input type="submit" name="submit" class="btn btn-primary" />
+						<input type="submit" name="submit" class="btn btn-primary" oninput="validation()" />
 					</form>
 				</div>
 				<div class="col-md-3">
@@ -81,14 +83,23 @@ include('a_config.php');
 			$email = mysqli_real_escape_string($con, $_POST["email"]);
 			$phone = mysqli_real_escape_string($con, $_POST["phone"]);
 			$message = mysqli_real_escape_string($con, $_POST["message"]);
-			$query = "insert into contact (name, contact, email, message) values ('".$name."', '".$email."', '".$phone."', '".$message."')";
+			$query = "insert into contactus (name, email,phone, message) values ('".$name."', '".$email."', '".$phone."', '".$message."')";
 			$result = mysqli_query($con, $query);
-			if($result)
-			{
-				echo "<script>alert('Successfully send message!');window.location.href='contactus.php';</script>";
-			}
+
+			
+			if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+				echo "<script>alert('Please Enter Valid Email ID!');</script>";
+				echo "<script> window.history.go(-1); </script>";		
+		    }
+			else{
+
+				if ($result) {
+						
+					echo "<script>alert('Successfully message sent!');window.location.href='contactus.php';</script>";
+					}
+				}
 		}
 		?>
-		
+		</div>
 	</body>
 </html>

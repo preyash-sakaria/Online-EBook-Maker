@@ -17,7 +17,7 @@ include('a_config.php');
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css" />
 	
 	</head>
-	<body>
+	<body style="background-image: url(image/1.jpg); background-color: #ffffff47; background-attachment: fixed;       background-blend-mode: overlay;">
 
 		<div class="content">
 			<?php
@@ -59,36 +59,6 @@ include('a_config.php');
 				</nav>
 
 	
-<!--				<nav class="navbar navbar-expand-md fixed-top navbar-light">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-						<i class="fa fa-navicon" style="color: white; "></i>
-					</button>
-					<div class="collapse navbar-collapse" id="collapsibleNavbar">
-						<?php
-						if(isset($_GET["type"]))
-						{
-						?>
-				<img src="image/logo.png" alt="Northern Lights" width="100" height="100" style="margin-left: 9px;">	<h2 class="navbar-brand" style="font-size: 31px;">Online E-Book Maker </h2>
-						<?php
-						}
-						?>
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link" id="userhome" href="index.php" id="home"><i class="fa fa-home"></i> Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="aboutus.php"><i class="fa fa-users"></i> About Us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contactus.php"><i class="fa fa-phone"></i> Contact Us</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="user" href="index.php?type=login"><i class="fa fa-lock"></i> Login</a>
-							</li>
-						</ul>
-					</div> 
-				</nav>
--->
 				<?php
 				if(!isset($_GET["type"]))
 				{
@@ -101,13 +71,13 @@ include('a_config.php');
 							
 						</ol>
 						<div class="carousel-inner text-center" role="listbox" >
-							<div class="carousel-item active" style="background-image: url('image/banner2.jpg') ; background-color: #ffffff47;     background-blend-mode: overlay;">
+							<div class="carousel-item active" style="background-image: url('image/back.jpg') ; background-color: #ffffff47;     background-blend-mode: overlay;">
 								<div class="d-flex h-100 align-items-center justify-content-center">
 							
 							<h2> Welcome to Online Ebook Maker  </h2>
 								</div>
 							</div>
-							<div class="carousel-item" style="background-image: url('image/banner1.jpg'); background-color: #ffffff47;     background-blend-mode: overlay;">
+							<div class="carousel-item" style="background-image: url('image/3.jpg'); background-color: #ffffff47;     background-blend-mode: overlay;">
 								<div class="d-flex h-100 align-items-center justify-content-center">
 							
 							<h2> Make ebooks here for free of charge</h2>							
@@ -138,7 +108,7 @@ include('a_config.php');
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 admin text-right">
 								<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
-									<i class="fa fa-sign-in"></i> Admin Login
+									<i class="fa fa-lock"></i> Admin Login
 								</button>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 text-center">

@@ -3,10 +3,32 @@ session_start();
 include('connection.php');
 if(isset($_SESSION["type"]))
 {
-   include('header.php');
 
 ?>
-<div class="container my-5">
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Finished Ebooks</title>
+	<style type="text/css">
+			.back{
+				  background-position: center;
+				  background-attachment: fixed;
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  background-image: url("image/imagebg.jpg");
+				  background-blend-mode: overlay;
+				  background-color: #ffffff47;
+				}
+		</style>
+</head>
+<body>
+<div class="back">
+
+<?php    include('header.php'); ?>
+
+<div style="margin-top: 9%;">
+<div class="container my-5" style="background-color: lightblue">
 	<h1 class="text-center" style="color: navy">Manage Finish Ebook Details</h1>
 	<br />
 	<div align="right">
@@ -28,45 +50,6 @@ if(isset($_SESSION["type"]))
 </div>
 
 
-
-<!-- Description Modal -->
-<div id="desc" class="modal fade">
-	<div class="modal-dialog modal-md">
-		<div class="modal-content shadow-lg p-3 mb-5 bg-white rounded text-left">
-			<div class="modal-header">
-				<h4 class="modal-title title" id="car_name"></h4>
-			</div>
-			<div class="modal-body">
-				<h4 class="modal_head"><u>Description:</u></h4> <label name="sdescription" id="sdescription" class="inner_data"></label>
-			</div>
-			<div class="modal-footer">
-				<button type="button" data-dismiss="modal" class="btn bg-danger class text-white">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- The Delete Confirmation Modal -->
-<div id="delete" class="modal fade">
-	<div class="modal-dialog">
-		<form method="post" id="delete_form">
-			<div class="modal-content shadow-lg p-3 mb-5 bg-white rounded text-left">
-				<div class="modal-header">
-					<h4 class="modal-title">Confirmation Deletion</h4>
-				</div>
-				<div class="modal-body">
-					<input type="text" name="cid1" id="cid1" class="form-control invisible"/>
-					<h6>Are you sure you want to delete Author<mark><label name="audname" class="font-weight-bold" id="audname"></label></mark> Details?</h6>
-				</div>
-				<div class="modal-footer">
-					<input type="hidden" name="operation1" id="operation1" />
-					<input type="submit" name="action1" id="action1" class="btn bg-success text-white" value="Yes" />
-					<button type="button" data-dismiss="modal" class="btn bg-danger class text-white">No</button>
-				</div>
-			</div>
-		</form>
-	</div>
-</div>
 
 <div id="Approvalpopup" class="modal fade">
 	<div class="modal-dialog">
@@ -215,9 +198,6 @@ $(document).ready(function(){
 	
 });
 
-
-
-			
 	</script>
 </body>
 </html>
