@@ -1,10 +1,11 @@
 # Online-EBook-Maker
  
 
-<h3>Welcome to Online Ebook Maker project. This website enables author to create ebook here for free of charge.</h3>
 
-In order to access this code, there are some files you need to setup prior: -
+Welcome to Online Ebook Maker project. This website enables author to create ebook here for free of charge. 
 
--> Create a database named onlineebook 
--> Then, Import .sql file (Data > onlineebook.sql file ) into your localhost server 
+In order to access this code, there are some files you need to setup prior: - 
+
+-> Create a database named onlineebook
+-> Then, Import .sql file (Data > onlineebook.sql file ) into your localhost server
 -> Finally, run website into your browser with index.php file
