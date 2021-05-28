@@ -36,11 +36,12 @@
 	</script>
   <style>
     .fa {
-  padding: 20px;
+    padding: 20px;
 text-align: center;
   margin: 5px 2px;
   font-size: 30px;
   width: 50px;
+
 }
     .fa-facebook {
   background: #3B5998;
@@ -74,14 +75,18 @@ text-align: center;
 			<div class="col-md-8 text-left">
 				<p><a href="aboutus.php" class="text-white">About Us</a> || <a href="contactus.php" class="text-white">Contact Us</a></p>
 				<p>COPYRIGHT @ Online E-Book Maker</p>
-        <p> 
-          <a href="https://www.facebook.com/marketplace" class="fa fa-facebook"> </a> 
+			</div>
+			<div class=""> 
+    
+          <a href="https://www.facebook.com/" class="fa fa-facebook"> </a> 
 
-          <a href="www.twitter.com" class="fa fa-twitter"> </a>
+          <a href="https://www.twitter.com" class="fa fa-twitter"> </a>
 
-          <a href="#" class="fa fa-pinterest"> </a>
+          <a href="https://www.pinterest.com.au" class="fa fa-pinterest"> </a>
 
-          <a href="#" class="fa fa-linkedin"> </a></p>
+          <a href="https://au.linkedin.com/" class="fa fa-linkedin"> </a>
+
+          <a href="https://www.instagram.com/" class="fa fa-instagram"> </a>
 			</div>
 		</div>
 	</div>

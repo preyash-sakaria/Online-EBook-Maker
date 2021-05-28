@@ -138,7 +138,7 @@ include('a_config.php');
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 admin text-right">
 								<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
-									<i class="fa fa-sign-in"></i> Admin Login
+									<i class="fa fa-sign-in"></i>Admin Login
 								</button>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12 text-center">

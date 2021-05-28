@@ -16,21 +16,11 @@ include('../a_config.php');
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.3.1/jquery.bootgrid.css" />
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		    <link rel='stylesheet' href="../css/themes/all-themes.css"  />
-		    <!-- Bootstrap Core Css -->
-     <!-- Google Fonts -->
-
-<!-- 
-<script async="" src="https://www.google-analytics.com/analytics.js">
-</script><script type="text/javascript" src="../css/ckeditor/config.js?t=G6DD"></script>
-<link rel="stylesheet" type="text/css" id="u0" href="../css/tinymce/skins/lightgray/skin.min.css">
-<link rel="stylesheet" type="text/css" href="../css/ckeditor/skins/moono/editor.css?t=G6DD">
-<script type="text/javascript" src="../css/ckeditor/lang/en.js?t=G6DD"></script>
-<script type="text/javascript" src="../css/ckeditor/styles.js?t=G6DD"></script> -->
-	</head>
+			</head>
 	<body>
 	<div class="content">
 		<div class="home_banner1 text-center" >
-				<nav class="navbar navbar-expand-md fixed-top navbar-light-green">
+				<nav class="navbar navbar-expand-md fixed-top navbar-light">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 					<i class="fa fa-navicon" style="color: white; "></i>
 				</button>

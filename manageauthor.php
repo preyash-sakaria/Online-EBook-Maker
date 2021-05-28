@@ -29,7 +29,7 @@ if(isset($_SESSION["type"]))
 	<?php include('header.php');?>
 
 <div style="margin-top: 9%;">
-<div class="container my-5" style="background-color: #668cff">
+<div class="container my-5" style="background-color: grey">
 	<h1 class="text-center" style="color: navy">Manage Author Details</h1>
 	<br />
 	<div align="right">
