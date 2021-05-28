@@ -10,6 +10,7 @@ if(isset($_SESSION["user_type"]))
 				  background-position: center;
 				  background-attachment: fixed;
 				  background-repeat: no-repeat;
+				  background-size: cover;
 				  background-image: url("../image/banner.jpg");
 				  background-blend-mode: overlay;
 				  background-color: #ffffff47;
@@ -22,7 +23,7 @@ if(isset($_SESSION["user_type"]))
 
 	<div style="margin-top: 9%;">
 
- <div class="container my-5" style="background-color: #668cff">
+ <div class="container my-5" style="background-color: lightgrey">
 
 	<h1 class="text-center" style="color: navy">Manage Ebook</h1>
 	<br />

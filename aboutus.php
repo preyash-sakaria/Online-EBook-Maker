@@ -21,6 +21,7 @@ include('a_config.php');
 				  background-position: center;
 				  background-attachment: fixed;
 				  background-repeat: no-repeat;
+					background-size: cover;
 				  background-image: url("image/banner.jpg");
 				  background-blend-mode: overlay;
 				  background-color: #ffffff47;

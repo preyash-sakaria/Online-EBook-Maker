@@ -89,7 +89,7 @@ $data="<h2>  f </h2>
     <link href="css/themes/all-themes.css" rel="stylesheet" />
 </head>
 
-<body style="background-color: lightcyan;">
+<body style="background-color: lightgrey;">
   <?php
    include 'header.php'; 
   ?>

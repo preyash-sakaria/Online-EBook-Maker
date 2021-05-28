@@ -22,7 +22,7 @@ $id = "";
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<style type="text/css">
 			.back{
-				background-image: url(image/2.jpg);
+				background-image: url(image/3.jpg);
 				background-blend-mode: screen;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -37,8 +37,8 @@ $id = "";
 
 
 <div class="back">
-<div class="container my-5">
-<form method="post" id="product_form" style="margin-top: 10%;">
+<div class="container my-5" style=" ">
+<form method="post" id="product_form" style="margin-top: 10%; background-color: lightgrey; width: 55%; margin-left: 20%;">
 	<h1 class="text-center" style="color: navy">Author Personal Details</h1>
 	<br />
 	<div class="row">

@@ -11,11 +11,12 @@ if(isset($_SESSION["type"]))
 <head>
 	<title> Manage Author </title>
 
-	<style type="text/css">
+	<style type="text/css"> 
 			.back{
 				  background-position: center;
 				  background-attachment: fixed;
 				  background-repeat: no-repeat;
+				  background-size: cover;
 				  background-image: url("image/banner.jpg");
 				  background-blend-mode: overlay;
 				  background-color: #ffffff47;
