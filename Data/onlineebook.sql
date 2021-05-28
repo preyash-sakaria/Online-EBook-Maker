@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 22, 2021 at 01:49 PM
+-- Generation Time: May 28, 2021 at 01:26 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -65,8 +65,24 @@ CREATE TABLE IF NOT EXISTS `author` (
 --
 
 INSERT INTO `author` (`Aid`, `Afname`, `Alname`, `Aemail`, `Amobile`, `address`, `password`, `status`) VALUES
-(101, 'Atish', 'Kelkar', 'test@gmail.com', '9999988888', 'mumbai', '1234', 'Approved'),
-(102, 'Aditi', 'Dafda', 'daditi024@gmail.com', '0452252434', '4 kelvin gr, Melbourne', '1212', 'Approved');
+(101, 'Atish', 'Kelkar', 'test@gmail.com', '9999988888', 'Melbourne', '1234', 'Approved'),
+(102, 'Aditi', 'Dafda', 'daditi024@gmail.com', '0452252434', 'Melbourne', '1212', 'Approved');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contactus`
+--
+
+DROP TABLE IF EXISTS `contactus`;
+CREATE TABLE IF NOT EXISTS `contactus` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) NOT NULL,
+  `email` text NOT NULL,
+  `phone` int(10) NOT NULL,
+  `message` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
