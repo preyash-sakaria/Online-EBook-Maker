@@ -16,7 +16,7 @@ if(isset($_SESSION["type"]))
 				  background-attachment: fixed;
 				  background-repeat: no-repeat;
 				  background-size: cover;
-				  background-image: url("image/banner.jpg");
+				  background-image: url("image/imagebg.jpg");
 				  background-blend-mode: overlay;
 				  background-color: #ffffff47;
 				}
