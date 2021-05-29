@@ -46,7 +46,8 @@ include('a_config.php');
 			Our team is made up of smart and talented people that are passionate about developing this website more and more user friendly and useful. </h3>
 		</div>
 	
-		</div> </div>
+		</div>
+		 </div>
 		<?php
 		include('footer.php');
 		?>
